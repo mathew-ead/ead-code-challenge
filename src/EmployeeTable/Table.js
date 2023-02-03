@@ -51,6 +51,7 @@ const TableGrid = (props) => {
       }}
       options={{
         pageSize: 10,
+        filtering: true
       }}
       data-cy="employee-table-heading"
       title="Here is the list of employees"

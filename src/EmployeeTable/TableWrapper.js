@@ -17,12 +17,13 @@ const StyledStack = styled(Stack)`
 
 // setter array of table column
 const columns = [
-  { title: "Name", field: "name", searchable: false, sorting: false },
-  { title: "Absence Type", field: "type" },
+  { title: "Name", field: "name", searchable: false, sorting: false, filtering: false },
+  { title: "Absence Type", field: "type", filtering: true },
   {
     title: "Period",
     field: "startDate",
     type: "date",
+    filtering: true,
     dateSetting: { locale: "en-GB" },
     emptyValue: () => null,
     render: (rowData) => {
@@ -32,11 +33,13 @@ const columns = [
   {
     title: "Member Note",
     field: "memberNote",
+    filtering: false
   },
-  { title: "Status", field: "status" },
+  { title: "Status", field: "status", filtering: false },
   {
     title: "Admitter Note",
     field: "admitterNote",
+    filtering: false
   },
 ];
 
