@@ -21,9 +21,9 @@ function GlobalFilter({
     }, 200)
 
     return (
-        <div className='w-full justify-between flex items-center'>
-            <div className='flex '>
-                <div className='mx-2'>
+        <div className='w-full justify-between items-center flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row'>
+            <div className='sm:block md:flex lg:flex'>
+                <div className='m-2'>
                     <label className="flex gap-x-2 items-baseline">
                         <input
                             type="text"
@@ -37,7 +37,7 @@ function GlobalFilter({
                         />
                     </label>
                 </div>
-                <div className='mx-2'>
+                <div className='m-2'>
                     {headerGroups.map((headerGroup) =>
                         headerGroup.headers.map((column) =>
                             column.Filter ? (
@@ -48,7 +48,7 @@ function GlobalFilter({
                         )
                     )}
                 </div>
-                <div className='mx-2'>
+                <div className='m-2'>
                     <label className="flex gap-x-2 items-baseline">
                         <input
                             type="text"
