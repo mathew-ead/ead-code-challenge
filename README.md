@@ -38,6 +38,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Get more details on Redux, check out the [Redux documentation](https://redux.js.org/).
 
-Get more details regarding the style component MUI [MUI](https://mui.com/)
+Get more details regarding the styling framework TailwindCSS [TailwindCSS](https://tailwindcss.com/)
 
 Check the more details of automated test cases. [Cypress](https://www.cypress.io/)
